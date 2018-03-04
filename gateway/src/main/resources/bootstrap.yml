@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
+  output:
+    ansi:
+      enabled: ALWAYS
