@@ -9,19 +9,23 @@ Micro services will be responsible for:
 * generating public and private key,
 * use them to encrypt and decrypt a message.
 
+## Live demo
+tbd
 
 ## Tech Stack
 
 - Spring Boot
   - Asynchronous Methods - finding prime numbers
 - Spring Cloud
-  - Config Server
+  - [Config Server](https://github.com/tomekceszke/hello-cloud-config) 
   - Netflix Eureka - service locator
-  - Ribbon
-  - Feign
+  - ~~Ribbon~~
+  - ~~Feign~~
   - Gateway
-  - Sleuth + Zipkin - tracking
-- Hibernate - persistence layer
-- Thymeleaf - presentation layer
+  - ~~Sleuth + Zipkin - tracking~~
+- ~~Hibernate - persistence layer~~
+- ~~Thymeleaf - presentation layer~~
+- ~~Docker~~
+- Maven
   
 
