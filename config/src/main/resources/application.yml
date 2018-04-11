@@ -8,7 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/tomekceszke/hello-cloud-config
+          uri: https://github.com/tomekceszke/rsa-config
   output:
     ansi:
       enabled: ALWAYS

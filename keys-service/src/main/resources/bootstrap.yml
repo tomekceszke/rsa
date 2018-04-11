@@ -1,9 +1,10 @@
 spring:
   application:
-    name: locator
+    name: keys-service
   cloud:
     config:
-      uri: http://${CONFIG_SERVER_HOST}:8888
+      uri: http://localhost:8888
+      fail-fast: true
   output:
     ansi:
       enabled: ALWAYS

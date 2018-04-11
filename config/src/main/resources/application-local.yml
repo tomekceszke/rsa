@@ -3,4 +3,4 @@ spring:
     config:
       server:
         git:
-          uri: file://C:/Users/tomek/Projects/hello-cloud-config
+          uri: file://C:/Users/tomek/Projects/rsa-config
