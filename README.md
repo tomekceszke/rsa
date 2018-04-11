@@ -1,11 +1,11 @@
-# Hello Cloud
+# RSA
 
 This simple project demonstrates capabilities of Spring Boot and Spring Cloud frameworks to build distributed web application.
 
 For the demo purposes it will implement RSA algorithm.
 
 Micro services will be responsible for:
-* finding the prime numbers, 
+* finding pseudo-random prime numbers,
 * generating public and private key,
 * use them to encrypt and decrypt a message.
 
@@ -15,15 +15,15 @@ tbd
 ## Tech Stack
 
 - Spring Boot
-  - Asynchronous Methods - finding prime numbers
+  - ~~Asynchronous Methods~~
 - Spring Cloud
-  - [Config Server](https://github.com/tomekceszke/hello-cloud-config) 
-  - Netflix Eureka - service locator
-  - ~~Ribbon~~
-  - ~~Feign~~
-  - Gateway
-  - ~~Sleuth + Zipkin - tracking~~
-- ~~Hibernate - persistence layer~~
+  - [Config Server](https://github.com/tomekceszke/rsa-config)
+  - Netflix Eureka (locator)
+  - Feign + Ribbon (REST client and load balancing)
+  - ~~Gateway~~
+  - ~~Sleuth + Zipkin (tracking)~~
+- ~~Hibernate - (persistence)~~
+- JUnit, Spring Test
 - ~~Thymeleaf - presentation layer~~
 - ~~Docker~~
 - Maven
