@@ -26,6 +26,7 @@
         <module>prime-service</module>
         <module>keys-service</module>
         <module>service-client</module>
+        <module>encryption-service</module>
     </modules>
 
     <properties>

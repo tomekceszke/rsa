@@ -3,7 +3,7 @@ spring:
     name: locator
   cloud:
     config:
-      uri: http://${CONFIG_SERVER_HOST}:8888
+      uri: http://${CONFIG_SERVER_HOST:localhost}:8888
   output:
     ansi:
       enabled: ALWAYS

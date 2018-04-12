@@ -18,13 +18,13 @@ tbd
   - ~~Asynchronous Methods~~
 - Spring Cloud
   - [Config Server](https://github.com/tomekceszke/rsa-config)
-  - Netflix Eureka (locator)
-  - Feign + Ribbon (REST client and load balancing)
+  - Netflix Eureka (service locator)
+  - Feign + Ribbon (REST client with load balancing)
   - ~~Gateway~~
   - ~~Sleuth + Zipkin (tracking)~~
-- ~~Hibernate - (persistence)~~
+- ~~Hibernate (persistence)~~
 - JUnit, Spring Test
-- ~~Thymeleaf - presentation layer~~
+- Thymeleaf (presentation)
 - ~~Docker~~
 - Maven
   

@@ -1,6 +1,6 @@
 spring:
   application:
-    name: gateway
+    name: encryption-service
   cloud:
     config:
       uri: http://${CONFIG_SERVER_HOST:localhost}:8888
