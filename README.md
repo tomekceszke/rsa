@@ -1,5 +1,7 @@
 # RSA
 
+![Encryptor screen](doc/img/encryptor.png)
+
 This simple project demonstrates capabilities of Spring Boot and Spring Cloud frameworks to build distributed web application.
 
 For the demo purposes it will implement RSA algorithm.
