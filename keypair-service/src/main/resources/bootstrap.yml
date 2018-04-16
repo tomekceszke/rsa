@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: keypair-service
+  cloud:
+    config:
+      uri: http://${CONFIG_SERVER_HOST:localhost}:8888
+      fail-fast: true
+  output:
+    ansi:
+      enabled: ALWAYS

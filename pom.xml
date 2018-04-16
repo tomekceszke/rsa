@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ceszke.demo</groupId>
+    <groupId>com.ceszke.security.rsa</groupId>
     <artifactId>rsa</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <name>rsa</name>
-    <description>RSA implementation using Spring Cloud framework</description>
+    <description>Simple RSA implementation using Spring Cloud framework</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -24,8 +24,7 @@
         <module>locator</module>
         <module>gateway</module>
         <module>prime-service</module>
-        <module>keys-service</module>
-        <module>service-client</module>
+        <module>keypair-service</module>
         <module>encryption-service</module>
     </modules>
 

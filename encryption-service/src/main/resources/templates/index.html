@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8"/>
     <title>RSA Encryptor</title>
@@ -7,10 +7,10 @@
 <body>
     <h1>RSA Encryptor</h1>
 
-    <form action="#">
-        Text to encrypt: <input type="text" name="plain_text" maxlength="20"/> <br/>
+    <form action="/" method="post">
+        Text to encrypt: <input type="text" name="plain_text" size="100"/> <br/>
         Key lenght:
-        <select>
+        <select name="length">
             <option value="128">128 bits</option>
             <option value="256">256 bits</option>
             <option value="512">512 bits</option>
@@ -21,9 +21,9 @@
 
     <br/><hr/><br/><br/>
 
-    Encrypted text: <input type="text" name="encrypted_text" maxlength="20" readonly="readonly"> <br/>
-    Public key: <input type="text" name="encrypted_text" maxlength="20" readonly="readonly"> <br/>
-    Private key: <input type="text" name="encrypted_text" maxlength="20" readonly="readonly"> <br/>
+    Public key: <input type="text" size="100" readonly="readonly" th:value="${publicKey}"/> <br/>
+    Private key: <input type="text" size="100" readonly="readonly" th:value="${privateKey}"/> <br/>
+    Encrypted text: <input type="text"  size="100" readonly="readonly" th:value="${encryptedText}"/> <br/>
 
 
 </body>
