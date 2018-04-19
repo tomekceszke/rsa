@@ -25,7 +25,7 @@ tbd
   - Netflix Eureka (service locator)
   - Feign + Ribbon (REST client with load balancing)
   - ~~Gateway~~
-  - ~~Sleuth + Zipkin (tracking)~~
+  - Sleuth + Zipkin (tracking)
 - ~~Hibernate (persistence)~~
 - JUnit, Spring Test
 - Thymeleaf (presentation)
