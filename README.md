@@ -11,6 +11,8 @@ Micro services will be responsible for:
 * generating public and private key,
 * use them to encrypt and decrypt a message.
 
+![Flow](doc/img/zipkin_flow.png)
+
 ## Live demo
 tbd
 
