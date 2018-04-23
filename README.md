@@ -1,6 +1,6 @@
 # RSA
 
-![Encryptor screen](doc/img/encryptor.png)
+![demo](doc/img/demo.gif)
 
 This simple project demonstrates capabilities of Spring Boot and Spring Cloud frameworks to build distributed web application.
 
@@ -25,6 +25,7 @@ tbd
   - Netflix Eureka (service locator)
   - Feign + Ribbon (REST client with load balancing)
   - ~~Gateway~~
+  - ~~Hystrix (circuit breaker)~~
   - Sleuth + Zipkin (tracking)
 - ~~Hibernate (persistence)~~
 - JUnit, Spring Test

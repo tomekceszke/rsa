@@ -17,23 +17,25 @@ public class EncryptionController {
 
     private EncryptionService encryptionService;
 
-    @GetMapping
+    @GetMapping("/")
     public String index() {
         return "index";
     }
 
 
-    @PostMapping
-    public String encode(@RequestParam("plain_text") String plainText, @RequestParam Integer length, Model model) {
+    @PostMapping("/")
+    public String encode(@RequestParam("textToEncrypt") String textToEncrypt, @RequestParam Integer length, Model model) {
 
         KeyPair keyPair = encryptionService.getKeys(length);
         Key publicKey = keyPair.getPublicKey();
         Key privateKey = keyPair.getPrivateKey();
+        BigInteger encryptedText = encryptionService.encrypt(textToEncrypt, publicKey);
 
-        BigInteger encryptedText = encryptionService.encrypt(plainText, publicKey);
-
-        model.addAttribute("publicKey", publicKey.toString());
-        model.addAttribute("privateKey", privateKey.toString());
+        model.addAttribute("textToEncrypt", textToEncrypt);
+        model.addAttribute("length", length);
+        model.addAttribute("publicExponent", publicKey.getExponent());
+        model.addAttribute("privateExponent", privateKey.getExponent());
+        model.addAttribute("modulus", publicKey.getExponent());
         model.addAttribute("encryptedText", encryptedText);
 
         return "index";

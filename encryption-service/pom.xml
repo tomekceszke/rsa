@@ -30,7 +30,7 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>com.ceszke.security.rsa</groupId>
+            <groupId>com.ceszke.security</groupId>
             <artifactId>keypair-service-client</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
