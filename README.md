@@ -25,12 +25,19 @@ tbd
   - Netflix Eureka (service locator)
   - Feign + Ribbon (REST client with load balancing)
   - ~~Gateway~~
-  - ~~Hystrix (circuit breaker)~~
+  - Hystrix (circuit breaker)
   - Sleuth + Zipkin (tracking)
 - ~~Hibernate (persistence)~~
-- JUnit, Spring Test
+- JUnit, Spring MVC Test, WireMock
 - Thymeleaf (presentation)
 - ~~Docker~~
 - Maven
+
+## TODO
+- Exception handlers
+- Download KeyPairs in some common format
+- CI/CD environment
+- Production & live demo
+- ...
   
 

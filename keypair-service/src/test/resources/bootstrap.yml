@@ -1,10 +1,12 @@
 spring:
   application:
-    name: prime-service
+    name: keypair-service
   cloud:
     config:
-      uri: http://192.168.99.100:8888
-      fail-fast: true
+      enabled: false
   output:
     ansi:
       enabled: ALWAYS
+eureka:
+  client:
+    enabled: false

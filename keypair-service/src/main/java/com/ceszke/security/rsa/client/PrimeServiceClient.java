@@ -10,7 +10,7 @@ import java.math.BigInteger;
 public interface PrimeServiceClient {
 
     @GetMapping("/prime")
-    BigInteger getRandomPrime(@RequestParam("bitLength")  int bitLength);
+    BigInteger getRandomPrime(@RequestParam("length")  int length);
 
 
 }

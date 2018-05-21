@@ -1,0 +1,39 @@
+version: '3'
+services:
+    config:
+        container_name: config
+        build:
+            context: config/
+            args:
+              JAR_FILE: target/config-1.0-SNAPSHOT.jar
+        image: rsa/config:latest
+        ports:
+            - "8888:8888"
+        volumes:
+          - C:/Users/tomek/Projects/rsa-config:/Projects/rsa-config
+        environment:
+          - "SPRING_PROFILES_ACTIVE=local-docker"
+    locator:
+        container_name: locator
+        build:
+            context: locator/
+            args:
+              JAR_FILE: target/locator-1.0-SNAPSHOT.jar
+        image: rsa/locator:latest
+        depends_on:
+            - config
+        ports:
+            - "8761:8761"
+        environment:
+          - "CONFIG_SERVER_HOST=${DOCKER_HOST}"
+#    prime-service:
+#        container_name: prime-service
+#        build:
+#            context: prime-service/
+#            args:
+#              JAR_FILE: target/prime-service-1.0-SNAPSHOT.jar
+#        image: rsa/prime-service:latest
+#        depends_on:
+#            - config
+#        expose:
+#            - 8761
